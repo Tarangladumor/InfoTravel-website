@@ -1,0 +1,488 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;1,500&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+ul{
+    list-style: none;
+
+}
+
+.container{
+    max-width: 1100px;
+    width: 90%;
+    margin: 0 auto;
+    /* border: 2px solid red; */
+}
+
+a{
+    text-decoration: none;
+    font-size: 1.6rem;
+}
+
+p, li{
+    font-size: 1.6rem;
+    letter-spacing: 0.15em;
+    margin-bottom: 0.5em;
+}
+
+h1,h2,h3{
+    margin-bottom: 0.5em;
+    letter-spacing: 0.15em;
+    font-weight: 500;
+}
+
+.lg-heading{
+    font-size: 3.5rem;
+}
+
+.md-heading{
+    font-size: 2.2rem;
+}
+
+.text-red{
+    color: #e63946;
+}
+
+.text-black{
+    color: #333;
+}
+
+.text-white{
+    color: #f4f4f4;
+}
+
+.texr-gray{
+    color: #555;
+}
+
+.darkback{
+      background-color: #263238;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300
+    ;
+}
+
+.header{
+    height: 95vh;
+    background:linear-gradient( rgba(0,0,0,0.5) , rgba(0,0,0,0.5 )), url('../images/homepage.jpg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.navagation-bar{
+    padding: 0.5rem;
+}
+
+.navagation-bar .naviteams{
+    float: right;
+    margin-top: 1rem;
+    
+}
+
+.navagation-bar .logo{
+    float: left;
+}
+
+.navagation-bar::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.navagation-bar .naviteams .nav-item{
+    display: inline-block;
+    padding: 1rem  1rem;
+}
+
+h1{
+    font-size: 1.6rem;
+}
+
+.navagation-bar a:link,
+.navagation-bar :visited{
+    color: #f4f4f4;
+}
+.navagation-bar a:hover{
+    border-bottom: #f4f4f4 solid 2px;
+}
+
+.navagation-bar a{
+    padding: 0.3rem;
+}
+
+.header-content{
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+}
+
+.header-content h1{
+    text-transform: uppercase;
+    font-weight: 700;
+    
+}
+
+.header-content p{
+    text-transform: uppercase;
+}
+
+.btn{
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 0.5em 1.5em;
+    margin: o.5em 0;
+    font-weight: 500;
+}
+
+.primary-btn{
+   background-color: white;
+   border-radius: 10em;   
+}
+
+.secondary-btn{
+    background-color: #fff;
+    border: 2px solid #e63946;
+    border-radius: 1.5em;
+    color: #e63946;
+}
+
+.primary-btn:hover{
+    background-color: #ddd;
+}
+
+.secondary-btn:hover{
+    background-color: #fcf3f2;
+  }
+
+/* ####################################### SHOWCASE AREA ####################################### */
+
+.showcase{
+    background-color: #ddd;
+    padding: 10rem 0;
+}
+
+.row{
+    background-color: white;
+    height: 350px;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.238);
+}
+
+.row1{
+    margin-bottom: 7.5rem;
+}
+
+.row1 .img-box,.row2 .text-box{
+    float: left ;
+    width: 50%;
+}
+
+.row1 .text-box,.row2 .img-box{
+    float: right;
+    width: 50%;
+}
+
+.row .img-box{
+    height: 100%;
+}
+
+.row .text-box{
+    padding: 3.5rem;
+}
+
+.row .img-box img{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+/* ######################################### features styling ############################### */
+
+.features{
+    padding: 10rem 10rem;
+}
+
+.box-wrapper{
+   margin-bottom: 5rem;
+  
+   
+}
+
+.box{
+    width: 33.333333333%;
+    float: left;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.378);
+}
+
+.box-1, .box-3{
+    background-color: #263238;
+    color: #fff;
+}
+
+.box-2{
+    background: linear-gradient(25deg,#d64c7f,#ee4758 50%);
+    color: #fff;
+
+}
+
+.box-wrapper::after{
+    content: ' ';
+    display: block;
+    clear: both;
+}
+
+.box-wrapper .box{
+    height: 100%;
+    padding: 2rem;
+    text-align: center;
+}
+
+/* ######################################## FOOTER STYLING ############################## */
+
+.footer{
+    background-color: #263238;
+    color: #f4f4f4;
+    text-align: center;
+    padding: 10px;
+}
+
+.social-media-links i{
+    margin: 2rem;
+}
+
+/* ######################################## about us styling ############################## */
+
+.about-row{
+    box-sizing: border-box;
+    /* height: 400px; */
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.378);
+}
+
+.aboutus::after{
+   content: ' ';
+   display: block;
+   clear: both;
+   width: 200px;
+}
+
+.aboutus{
+    margin: 3rem;
+}
+
+
+.about-row .about-img-box{
+    height: 100%; 
+    float: left;
+    width: 45%;
+}
+
+.about-img-box img{
+    height: 100%; 
+    float: left;
+    width: 100%;
+}
+
+.about-row .about-text-box{
+    height: 100%;
+    float: right;
+    width: 45%;
+    box-sizing: content-box; 
+    
+}
+
+.about-row .about-text-box p{
+    margin-bottom: 5rem;
+    padding: 0 ;
+    word-spacing: 1rem;
+}
+
+.about-row .about-text-box h1{
+    margin-top: 5rem;
+    /* margin-bottom: 5rem; */
+}
+
+/* ######################################### contact US STYLING ###################################################### */
+
+.contact-row{
+    box-sizing: content-box;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.378);
+    margin: 50px 0px;
+}
+
+.contact-row::after{
+    content: ' ';
+    display: block;
+    clear: both;
+ }
+
+
+.contact-row .contact-img img{
+    height: 100%;
+    width: 100%;
+}
+
+.contact-row .contact-img{
+    height: 52%;
+    width: 90%;
+    float: left;
+}
+
+.contact-box{
+    margin: 20px;
+}
+
+.contactus{
+    float: left;
+}
+
+/* ################################################### MEDIA EDITING #################################################### */
+
+@media (max-width: 500px){
+ 
+    html{
+        font-size: 50%;
+    }
+    
+    .navagation-bar .naviteams,.navagation-bar .logo{
+        float: none;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    .header-content .main-heading{
+        display: none;
+    }
+
+    .row{
+         height: auto;
+         width: 100%;
+    }
+    
+    .row .img-box,.row .text-box{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .features .box{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .about-row .about-img-box,.about-row .about-text-box{
+        float: none;
+        width: 100%;
+        text-align: center;
+        height: auto;
+    }
+
+    .contact-row{
+        box-shadow: none;
+    }
+
+    .contact-row .contactus .contact-img,.contact-row .form-box{
+        width: 100%;
+        height: 50%;
+        float: none;
+        margin-bottom: 50px;
+    }
+
+    .contactus{
+        box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.378);
+        margin-bottom: 50px;
+    }
+
+}
+
+@media (min-width: 500px) and (max-width:830px){
+    html{
+        font-size: 50%;
+    }
+    
+    .navagation-bar .naviteams,.navagation-bar .logo{
+        float: none;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    
+
+    .row{
+         height: auto;
+         width: 100%;
+    }
+    
+    .row .img-box,.row .text-box{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .features .box{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .about-row .about-img-box,.about-row .about-text-box{
+        float: none;
+        width: 100%;
+        text-align: center;
+        height: auto;
+    }
+
+    .contact-row{
+        box-shadow: none;
+    }
+
+    .contact-row .contactus .contact-img,.contact-row .form-box{
+        width: 100%;
+        height: 50%;
+        float: none;
+        margin-bottom: 50px;
+    }
+
+    .contactus{
+        box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.378);
+        margin-bottom: 50px;
+    }
+
+}
+
+@media(orientation: landscape) and (max-height : 500px){
+    .header{
+        height: 90vmax;
+    }
+
+    .row{
+        height: auto;
+        width: 100%;
+   }
+   
+   .row .img-box,.row .text-box{
+       float: none;
+       width: 100%;
+       text-align: center;
+   }
+
+   .features .box{
+       float: none;
+       width: 100%;
+       text-align: center;
+   }
+}
